@@ -1,7 +1,12 @@
 /* Animation Timings */
+.logo {
+  animation-name: start-logo;
+  animation-duration: 2s;
+}
+
 .window1-container, .window2-container {
   animation-name: start-after;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .intro-text1 {
@@ -20,7 +25,7 @@
   animation: start-after 5s;
 }
 
-.projects-container {
+.projects-container , .window4-header, .window4-container {
   animation: start-after 5s;
 }
 
@@ -36,8 +41,6 @@
 /* ----------------- */
 
 .logo {
-  animation-name: start-logo;
-  animation-duration: 1s;
   width: 90px;
 }
 
@@ -206,6 +209,34 @@
   flex-wrap: wrap;
 }
 
+.window4-header {
+  margin-top: 40px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 30px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.window4-container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.skill {
+  margin: 10px;
+}
+
 /* Responsive Coding */
 @media screen
   and (min-device-width: 1441px)
@@ -213,6 +244,11 @@
     .window1-container, .window2-container {
       margin-left: 200px;
       margin-right: 200px;
+    }
+    .window4-header , .window4-container {
+
+      margin-left: 400px;
+      margin-right: 400px;
     }
 }
 @media screen
@@ -222,11 +258,16 @@
       margin-left: 200px;
       margin-right: 200px;
     }
+    .window4-header , .window4-container {
+
+      margin-left: 400px;
+      margin-right: 400px;
+    }
 }
 @media screen
   and (max-device-width: 768px)
   {
-    .window1-container, .window2-container {
+    .window1-container, .window2-container, .window4-header , .window4-container {
       margin-left: 10px;
       margin-right: 10px;
       font-size: 10px;
@@ -242,7 +283,7 @@
 @media screen
   and (max-device-width: 425px)
   {
-    .window1-container, .window2-container {
+    .window1-container, .window2-container, .window4-header , .window4-container {
       margin-left: 10px;
       margin-right: 10px;
       font-size: 10px;
