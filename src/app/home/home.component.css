@@ -13,7 +13,7 @@
   animation: start-after 3s;
 }
 
-.button1, .button2, .button3 {
+.button1, .button2, .button3, .button4 {
   animation: start-after 4s;
 }
 
@@ -105,7 +105,7 @@
   font-size: 30px;
 }
 
-.button1, .button2, .button3 {
+.button1, .button2, .button3, .button4 {
   border: 1px solid grey;
   border-radius: 8px;
   width: auto;
@@ -115,14 +115,14 @@
   cursor: pointer;
 }
 
-.button1:hover, .button2:hover, .button3:hover {
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: rgba(163, 163, 163, 0.452);
   transition: 0.5s;
 }
 
 .intro-text2 {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 160px;
 }
 
 .text-box {
@@ -234,14 +234,59 @@
 }
 
 .skill {
-  margin: 10px;
+  padding: 10px
 }
+
+.skill:hover {
+  color: rgb(0, 174, 255);
+  cursor: default;
+}
+
+.window5-container {
+  display: flex;
+  margin-top: 40px;
+ }
+
+ .window5-left {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+ }
+ .window5-right {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+ }
+
+.award {
+  margin-bottom: 40px;
+}
+
+ .award-header {
+  font-size: 25px;
+ }
+
+ .award-date {
+  color: rgb(0, 174, 255);
+ }
+
 
 /* Responsive Coding */
 @media screen
   and (min-device-width: 1441px)
   {
-    .window1-container, .window2-container {
+    .window1-container, .window2-container, .window5-header {
       margin-left: 200px;
       margin-right: 200px;
     }
@@ -254,12 +299,11 @@
 @media screen
   and (max-device-width: 1440px)
   {
-    .window1-container, .window2-container {
+    .window1-container, .window2-container, .window5-header  {
       margin-left: 200px;
       margin-right: 200px;
     }
     .window4-header , .window4-container {
-
       margin-left: 400px;
       margin-right: 400px;
     }
@@ -267,32 +311,44 @@
 @media screen
   and (max-device-width: 768px)
   {
-    .window1-container, .window2-container, .window4-header , .window4-container {
+    .window1-container, .window2-container, .window4-header , .window4-container{
       margin-left: 10px;
       margin-right: 10px;
       font-size: 10px;
     }
-    .content1-header {
+    .content1-header, .window5-left, .window4-header {
       font-size: 15px
     }
-    .window2-content1 {
+    .window2-content1, .window5-left {
       margin-left: 10px;
       margin-right: 10px;
+    }
+    .award-header {
+      font-size: 18px;
+    }
+    .award-desc .award-date {
+      font-size: 10px;
     }
 }
 @media screen
   and (max-device-width: 425px)
   {
-    .window1-container, .window2-container, .window4-header , .window4-container {
+    .window1-container, .window2-container, .window4-header , .window4-container{
       margin-left: 10px;
       margin-right: 10px;
       font-size: 10px;
     }
-    .content1-header {
+    .content1-header, .window5-left, .window4-header {
       font-size: 15px
     }
-    .window2-content1 {
+    .window2-content1, .window5-left {
       margin-left: 10px;
       margin-right: 10px;
+    }
+    .award-header {
+      font-size: 18px;
+    }
+    .award-desc .award-date {
+      font-size: 10px;
     }
 }
